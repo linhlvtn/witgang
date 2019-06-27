@@ -29,6 +29,27 @@ $('.owl-slidehome').owlCarousel({
 });
 
 
+$('.owl-productHome').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    autoplay: false,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1.5
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 2.5
+        }
+    }
+});
+
+
+
 //Menu Mobile-----------------
 var $menu = $("#mainMenu").clone();
 $menu.attr("id", "my-mobile-menu");

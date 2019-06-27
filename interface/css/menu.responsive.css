@@ -191,6 +191,10 @@ ul.navmenu>li>a i.fa {
 }
 
 @media only screen and (max-width: 992px) {
+	.mm-menu.mm-theme-white {
+		z-index: 99;
+	}
+
 	.navmenu {
 		display: none;
 	}

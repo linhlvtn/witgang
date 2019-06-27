@@ -7,6 +7,11 @@ body {
     color: #333;
 }
 
+#wrapper {
+    max-width: 1920px;
+    margin: auto;
+}
+
 button,
 input {
     &:focus {
@@ -76,4 +81,14 @@ img {
     color: $color--main;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.tt-Heading-Title {
+    font-size: 22px;
+    font-weight: 600;
+    color: $color--main;
+    border-bottom: 2px solid $color--main;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    display: inline-block;
 }
