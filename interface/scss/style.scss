@@ -1,7 +1,11 @@
-@import 'theme';
+@import 'theme.scss';
 
 #tt_Header {
     padding: 5px 0;
+
+    .Header_block--logo {
+        line-height: 0;
+    }
 
     .Header_block {
         display: flex;
@@ -34,4 +38,16 @@
     background: #56ab2f;
     background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
     background: linear-gradient(to right, #a8e063, #56ab2f);
+}
+
+#tt_Slidehome {
+    .owl-slidehome {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#tt_product-Hot {
+    padding: 5% 0;
 }

@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+    #tt_Header {
+        .Header_block--brand {
+            display: none;
+        }
+
+        .Header_block--logo {
+            max-width: 100px;
+        }
+    }
+
+    #tt--Menutop {
+        display: none;
+    }
+}

@@ -1,5 +1,6 @@
 /*======= Menu Responsive =====*/
 @media (min-width: 992px) {
+
 	ul.navmenu {
 		float: left;
 		padding: 0;
@@ -128,7 +129,7 @@
 	    font-size: 11px;
 	} */
 	ul.navmenu>li.iconmenu>a {
-		padding: 27.5px 17px 27.5px 10px;
+		padding: 15px;
 	}
 
 	ul.submenu>li.iconmenu::after {
@@ -173,15 +174,15 @@
 	cursor: pointer;
 	color: #000;
 	font-size: 30px;
-	left: 20px;
-	top: 3px;
+	right: 20px;
+	top: 0px;
 }
 
 .nav-btn-show:hover>a,
 .nav-btn-show:focus>a,
 .nav-btn-show:active>a,
 .nav-btn-show:visited>a {
-	color: #gray;
+	color: gray;
 }
 
 ul.navmenu>li>a i.fa {
@@ -193,6 +194,16 @@ ul.navmenu>li>a i.fa {
 	.navmenu {
 		display: none;
 	}
+
+	.nav-btn-show svg {
+		width: 25px;
+		height: 25px;
+	}
+
+	.nav-btn-show a {
+		color: #64b438;
+	}
+
 
 	.mm-listview {
 		width: 100%;

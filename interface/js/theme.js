@@ -3,9 +3,10 @@ $('.brandTop').owlCarousel({
     margin: 0,
     nav: false,
     autoplay: true,
+    dots: false,
     responsive: {
         0: {
-            items: 1
+            items: 1.5
         },
         600: {
             items: 3
@@ -14,8 +15,18 @@ $('.brandTop').owlCarousel({
             items: 5
         }
     }
-})
+});
 
+
+$('.owl-slidehome').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    autoplay: true,
+    dots: true,
+    items: 1,
+    autoHeight: true
+});
 
 
 //Menu Mobile-----------------

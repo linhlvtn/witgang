@@ -7,6 +7,27 @@ body {
     color: #333;
 }
 
+button,
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+.owl-theme {
+    .owl-nav.disabled+.owl-dots {
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .owl-dots .owl-dot span {
+        background: #fff;
+    }
+}
+
 .btn {
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -45,9 +66,13 @@ a {
     }
 }
 
-@mixin heading_title {
-    font-size: 30px;
-    font-weight: 700;
+img {
+    max-width: 100%;
+}
+
+.tt-Title-Section {
+    font-size: 40px;
+    font-weight: bold;
     color: $color--main;
     text-align: center;
     margin-bottom: 30px;

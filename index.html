@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="interface/plugin/menulink/jquery.mmenu.all.css">
     <link rel="stylesheet" href="interface/css/menu.responsive.css">
     <link rel="stylesheet" href="interface/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="interface/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="interface/css/bootstrap.min.css">
-    <link rel="stylesheet" href="interface/scss/style.css">
+    <link rel="stylesheet" href="interface/css/style.css">
+    <link rel="stylesheet" href="interface/css/responsive.css">
     <script src="interface/js/jquery-3.3.1.slim.min.js"></script>
 </head>
 
@@ -52,14 +54,23 @@
                     </div>
                 </div>
             </div>
+
+            <div class="nav-btn-show d-md-none d-lg-none">
+                <a href="#my-mobile-menu" class="sidebar-toggle">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="align-justify" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                        class="svg-inline--fa fa-align-justify fa-w-14 fa-2x">
+                        <path fill="currentColor"
+                            d="M432 424H16a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 56v16a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16z"
+                            class=""></path>
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
     <nav id="tt--Menutop">
         <div class="container">
             <div class="Menu-block">
-                <div class="nav-btn-show hidden-lg hidden-md">
-                    <a href="#my-mobile-menu" class="sidebar-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                </div>
                 <div id="mainMenu">
                     <ul class="navmenu">
                         <li class=""> <a href="">Home</a> </li>
@@ -113,6 +124,28 @@
             </div>
         </div>
     </nav>
+    <main>
+        <section id="tt_Slidehome">
+            <ul class="tt--ul owl-carousel owl-theme owl-slidehome">
+                <li>
+                    <a href="">
+                        <img src="http://cms.vietnamreport.net/source/banner_vietnamnet-02.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="http://cms.vietnamreport.net/source/banner_vietnamnet-02.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="tt_product-Hot">
+            <div class="container">
+                <h2 class="tt-Title-Section">HOT PRODUCT</h2>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="interface/js/bootstrap.min.js"></script>
 <script src="interface/js/owl.carousel.min.js"></script>
