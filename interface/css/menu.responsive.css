@@ -1,0 +1,235 @@
+/*======= Menu Responsive =====*/
+@media (min-width: 992px) {
+	ul.navmenu {
+		float: left;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 55px;
+		margin: 0;
+	}
+
+	ul.navmenu>li {
+		position: relative;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	ul.navmenu>li>a {
+		-webkit-transition: color .2s ease;
+		-o-transition: color .2s ease;
+		transition: color .2s ease;
+		display: inline-block;
+		padding: 16.5px 30px;
+		margin: 0;
+		font-size: 16px;
+		font-weight: 400;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	ul.navmenu>li.drop:after {
+		content: '';
+		position: absolute;
+		right: 4px;
+		top: 19px;
+		border: 5px solid transparent;
+		border-top-color: #fff;
+	}
+
+	ul.submenu,
+	ul.submenu ul {
+		position: absolute;
+		left: -9999px;
+		z-index: 2;
+		-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), inset 0 4px 0 0 #f1b400;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), inset 0 4px 0 0 #f1b400;
+	}
+
+	ul.submenu li {
+		position: relative;
+		height: 0;
+		-webkit-transition: height .2s ease;
+		-o-transition: height .2s ease;
+		transition: height .2s ease;
+	}
+
+	ul.submenu>li a {
+		display: block;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.71;
+		letter-spacing: normal;
+		text-align: left;
+		text-transform: unset;
+		color: #666666;
+		padding: 12px 20px;
+		min-width: 240px;
+		background: transparent;
+		border-top: 1px solid #e0e0e0;
+		text-decoration: none;
+		-webkit-transition: color .2s ease;
+		-o-transition: color .2s ease;
+		transition: color .2s ease;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	ul.navmenu>li:hover>a {
+		color: #fbff00;
+	}
+
+	ul.submenu li:hover>a {
+		background: #333;
+		color: #fff;
+	}
+
+	ul.navmenu>li:hover ul.submenu {
+		left: auto;
+		background: #fff;
+	}
+
+	ul.navmenu>li:hover ul.submenu>li,
+	ul.submenu>li:hover ul.submenu2>li {
+		height: 50px;
+	}
+
+	ul.navmenu>li .icon {
+		width: 25px;
+		height: 25px;
+		margin: 0px 6px 0 5px;
+	}
+
+	ul.navmenu>li .icon img {
+		max-height: 25px
+	}
+
+	ul.submenu li:hover ul {
+		margin-left: 100% !important;
+		top: 0;
+		background: #ffffff;
+		-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), inset 0 4px 0 0 #f6e9a7;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), inset 0 4px 0 0 #f6e9a7;
+		left: auto;
+	}
+
+	/* ul.navmenu>li.iconmenu::after{
+		content: "\f0d7";
+	    position: absolute;
+	    font-family: FontAwesome;
+	    top: 0;
+	    right: 2px;
+	    line-height: 83px;
+	    color: #fff;
+	    font-size: 11px;
+	} */
+	ul.navmenu>li.iconmenu>a {
+		padding: 27.5px 17px 27.5px 10px;
+	}
+
+	ul.submenu>li.iconmenu::after {
+		content: "\f0da";
+		position: absolute;
+		font-family: FontAwesome;
+		top: 0;
+		right: 5px;
+		line-height: 55px;
+		color: #afafaf;
+		font-size: 11px;
+	}
+
+	ul.submenu li:hover:after {
+		color: #fff;
+	}
+
+	.navmenuLeft {
+		float: left;
+	}
+
+	.navmenuRight {
+		float: right !important;
+	}
+
+	.submenu,
+	.submenu ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.my-mobile-menu {
+	display: block
+}
+
+.nav-btn-show {
+	line-height: 45px;
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+	color: #000;
+	font-size: 30px;
+	left: 20px;
+	top: 3px;
+}
+
+.nav-btn-show:hover>a,
+.nav-btn-show:focus>a,
+.nav-btn-show:active>a,
+.nav-btn-show:visited>a {
+	color: #gray;
+}
+
+ul.navmenu>li>a i.fa {
+	font-size: 15px;
+	padding-right: 6px;
+}
+
+@media only screen and (max-width: 992px) {
+	.navmenu {
+		display: none;
+	}
+
+	.mm-listview {
+		width: 100%;
+		display: block;
+	}
+
+	.mm-listview>li>a,
+	.mm-listview>li>span {
+		text-transform: uppercase;
+	}
+
+	.mm-menu>.mm-panel.mm-hasnavbar {
+		padding-top: 40px;
+		padding: 40px 0;
+	}
+
+	.mm-menu>.mm-panel>.mm-listview {
+		margin-left: 0;
+		margin-right: -20px;
+	}
+}
+
+.mm-menu.mm-theme-white .mm-navbar a {
+	color: #000 !important;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.mm-menu.mm-theme-white .mm-navbar .mm-btn:before,
+.mm-menu.mm-theme-white .mm-navbar .mm-btn:after {
+	border-color: #b18408 !important;
+}
+
+.mm-listview>li>a,
+.mm-listview>li>span {
+	color: #333 !important;
+}
+
+/*End menu reponsive*/
