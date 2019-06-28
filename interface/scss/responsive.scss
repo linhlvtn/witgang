@@ -13,3 +13,89 @@
         display: none;
     }
 }
+
+@media (max-width: 680px) {
+    .tt-Title-Section {
+        font-size: 24px;
+    }
+
+    #tt_product-Hot {
+        .product-thumnail {
+            .hover--product {
+                top: 0;
+
+                span {
+                    margin: 30px 10px 20px 10px;
+                }
+
+                .description {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #tt_aboutHome {
+        .description-abouthome {
+            line-height: 1.6;
+            font-size: 14px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    #tt_newHome {
+        .list-new {
+            li {
+                flex-direction: column;
+                margin-bottom: 20px;
+
+                &:nth-child(2n) {
+                    .col {
+                        &.colnew1 {
+                            order: 1;
+                        }
+
+                        &.colnew2 {
+                            order: 2;
+                        }
+                    }
+                }
+            }
+
+            .col {
+                width: 100%;
+
+                &.colnew2 {
+                    margin-top: 20px;
+                }
+            }
+
+            .block-colum--title {
+                .title {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+
+                .descript {
+                    font-size: 14px;
+                    height: 110px;
+                }
+
+                .click-showmore {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    #tt--footer {
+        min-height: 625px;
+
+        .img-contact-footer {
+            &.col-ft-2 {
+                text-align: center;
+            }
+        }
+    }
+}

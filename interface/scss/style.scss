@@ -51,6 +51,24 @@
 #tt_product-Hot {
     padding: 5% 0;
 
+    .owl-productHome {
+        .owl-nav {
+            display: flex;
+            justify-content: space-between;
+
+            svg {
+                width: 15px;
+            }
+
+            button {
+                &:hover {
+                    background: none;
+                    color: #56ab2f;
+                }
+            }
+        }
+    }
+
     .product-thumnail {
         position: relative;
         overflow: hidden;
@@ -120,7 +138,8 @@
 }
 
 #tt_aboutHome {
-    padding-bottom: 5%;
+    padding: 5% 0;
+    background: #f3f3f3;
 
     .description-abouthome {
         text-align: center;
@@ -140,7 +159,7 @@
 }
 
 #tt_newHome {
-    padding-bottom: 5%;
+    padding: 5% 0;
 
     .list-new {
         li {
@@ -232,4 +251,73 @@
             margin-bottom: 30px;
         }
     }
+}
+
+#tt--footer {
+    background: url(../images/123.jpg);
+    // min-height: 390px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+    margin-top: 50px;
+    border-top: 5px solid #6bb91c;
+    position: relative;
+    overflow: hidden;
+    padding: 30px 0;
+
+    &::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #06060699;
+        content: "";
+    }
+
+    .block-footer {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+
+        .title-adr {
+            display: block;
+        }
+    }
+
+    .tt-address-footer {
+        * {
+            color: #fff;
+        }
+    }
+
+    .block-all-address {
+        background: #ffffff21;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .coppy--right {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .img-contact-footer {
+        img {
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        &.col-ft-2 {
+            text-align: right;
+        }
+    }
+
 }
