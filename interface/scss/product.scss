@@ -1,0 +1,46 @@
+.tt_product-page {
+    .hover--product {
+        display: block;
+    }
+}
+
+#tt_product-Hot {
+    &.tt_product-page {
+        .product-thumnail {
+            margin-bottom: 30px;
+
+            &:hover {
+                .hover--product {
+                    background: #ffffffe3;
+                    border: 3px solid #58ad31;
+
+                    span,
+                    .description {
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        .hover--product {
+            display: block;
+            top: 0;
+            border: 3px solid transparent;
+
+            span {
+                margin: 20px 20px 20px 20px;
+            }
+
+            .description {
+                height: 110px;
+                -webkit-line-clamp: 5;
+                line-height: 1.6;
+            }
+
+        }
+
+        .navigation {
+            margin: 20px 0;
+        }
+    }
+}

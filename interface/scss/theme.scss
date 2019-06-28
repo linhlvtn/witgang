@@ -12,6 +12,26 @@ body {
     margin: auto;
 }
 
+.center {
+    text-align: center;
+}
+
+.pagination-block {
+    margin: auto;
+    display: inline-block;
+
+    .page-item {
+        &.active {
+            .page-link {
+                z-index: 1;
+                color: #fff;
+                background-color: #6bb91c;
+                border-color: #6bb91c;
+            }
+        }
+    }
+}
+
 button,
 input {
     &:focus {

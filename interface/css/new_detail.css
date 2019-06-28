@@ -1,0 +1,16 @@
+#tt_news-detail {
+  padding: 3% 0; }
+  #tt_news-detail .title-news {
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-weight: bold; }
+  #tt_news-detail .date-post {
+    display: flex;
+    align-items: center;
+    color: #b9b9b9; }
+    #tt_news-detail .date-post svg {
+      width: 15px; }
+  #tt_news-detail .content-news {
+    padding: 30px 0; }
+
+/*# sourceMappingURL=new_detail.css.map */

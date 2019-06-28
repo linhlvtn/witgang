@@ -1,0 +1,23 @@
+#tt_news-detail {
+    padding: 3% 0;
+
+    .title-news {
+        font-size: 38px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .date-post {
+        display: flex;
+        align-items: center;
+        color: #b9b9b9;
+
+        svg {
+            width: 15px;
+        }
+    }
+
+    .content-news {
+        padding: 30px 0;
+    }
+}

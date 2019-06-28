@@ -65,6 +65,7 @@
 
             .col {
                 width: 100%;
+                padding: 0;
 
                 &.colnew2 {
                     margin-top: 20px;
@@ -95,6 +96,53 @@
         .img-contact-footer {
             &.col-ft-2 {
                 text-align: center;
+            }
+        }
+    }
+
+    #tt_product-detail {
+        .name-product {
+            font-size: 20px;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+
+            ul {
+                line-height: 2;
+            }
+        }
+
+        .tt_product-content {
+            margin-top: 30px;
+        }
+    }
+
+    #tt_news-page {
+        .site-heading h3 {
+            font-size: 26px;
+        }
+    }
+
+    #tt_news-detail {
+        .title-news {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    #tt_product-Hot {
+        .product-thumnail {
+            .hover--product {
+                span {
+                    margin: 0;
+                    font-size: 14px;
+                }
             }
         }
     }

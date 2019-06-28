@@ -1,0 +1,17 @@
+#tt_product-detail {
+  padding: 3% 0;
+  line-height: 1.6; }
+  #tt_product-detail .img-product-detail {
+    width: 100%; }
+  #tt_product-detail .name-product {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold; }
+  #tt_product-detail .description {
+    font-size: 16px; }
+    #tt_product-detail .description ul {
+      line-height: 2; }
+  #tt_product-detail .tt_product-content {
+    margin-top: 30px; }
+
+/*# sourceMappingURL=product_detail.css.map */
